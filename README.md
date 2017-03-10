@@ -50,6 +50,8 @@ To download the project, install dependencies specified in the `Podfile` and ope
 git clone https://github.com/business-factory/openshop.io-ios.git
 cd openshop.io-ios
 bundle install
+pod update
+bundle update
 bundle exec fastlane build
 ```
 This will build the project and create a new workspace file `OpenShop.xcworkspace` which includes all the CocoaPod dependencies. Make sure to open `OpenShop.xcworkspace` workspace file for app development and submission and ignore `OpenShop.xcodeproj`.
