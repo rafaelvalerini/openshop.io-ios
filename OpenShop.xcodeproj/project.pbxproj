@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		08EF98D61E858A0E0039EFDC /* AddNewCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08EF98D11E858A0E0039EFDC /* AddNewCardViewController.m */; };
+		08EF98D71E858A0E0039EFDC /* AddNewCardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08EF98D21E858A0E0039EFDC /* AddNewCardViewController.xib */; };
+		08EF98D81E858A0E0039EFDC /* InsertCardManuallyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08EF98D41E858A0E0039EFDC /* InsertCardManuallyViewController.m */; };
+		08EF98D91E858A0E0039EFDC /* InsertCardManuallyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08EF98D51E858A0E0039EFDC /* InsertCardManuallyViewController.xib */; };
 		5B0841121BD3CF8300DC83E6 /* BFNCheckmarkView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B0841101BD3CF8300DC83E6 /* BFNCheckmarkView.m */; };
 		5B1229AA1C29B6EE004F6B55 /* BFStoryboardNoAnimationSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B1229A81C29B6EE004F6B55 /* BFStoryboardNoAnimationSegue.m */; };
 		5B179B7F1BF491C600FC8CF9 /* BFCartDelivery.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B179B7C1BF491C600FC8CF9 /* BFCartDelivery.m */; };
@@ -318,6 +322,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		08EF98D01E858A0E0039EFDC /* AddNewCardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddNewCardViewController.h; sourceTree = "<group>"; };
+		08EF98D11E858A0E0039EFDC /* AddNewCardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddNewCardViewController.m; sourceTree = "<group>"; };
+		08EF98D21E858A0E0039EFDC /* AddNewCardViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddNewCardViewController.xib; sourceTree = "<group>"; };
+		08EF98D31E858A0E0039EFDC /* InsertCardManuallyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InsertCardManuallyViewController.h; sourceTree = "<group>"; };
+		08EF98D41E858A0E0039EFDC /* InsertCardManuallyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InsertCardManuallyViewController.m; sourceTree = "<group>"; };
+		08EF98D51E858A0E0039EFDC /* InsertCardManuallyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InsertCardManuallyViewController.xib; sourceTree = "<group>"; };
 		3E91C982EADBA595DBC5579A /* Pods-OpenShopUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenShopUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OpenShopUITests/Pods-OpenShopUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		5B0841101BD3CF8300DC83E6 /* BFNCheckmarkView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BFNCheckmarkView.m; sourceTree = "<group>"; };
 		5B0841111BD3CF8300DC83E6 /* BFNCheckmarkView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BFNCheckmarkView.h; sourceTree = "<group>"; };
@@ -939,6 +949,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		08EF98CF1E858A0E0039EFDC /* NewCard */ = {
+			isa = PBXGroup;
+			children = (
+				08EF98D01E858A0E0039EFDC /* AddNewCardViewController.h */,
+				08EF98D11E858A0E0039EFDC /* AddNewCardViewController.m */,
+				08EF98D21E858A0E0039EFDC /* AddNewCardViewController.xib */,
+				08EF98D31E858A0E0039EFDC /* InsertCardManuallyViewController.h */,
+				08EF98D41E858A0E0039EFDC /* InsertCardManuallyViewController.m */,
+				08EF98D51E858A0E0039EFDC /* InsertCardManuallyViewController.xib */,
+			);
+			path = NewCard;
+			sourceTree = "<group>";
+		};
 		4CB639B2D7E4E6D886775A07 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -1369,6 +1392,7 @@
 		72DDF75D16E7485F00887646 /* OpenShop */ = {
 			isa = PBXGroup;
 			children = (
+				08EF98CF1E858A0E0039EFDC /* NewCard */,
 				5BA5C4181C14D0A700665664 /* BFAppDelegate.h */,
 				5BA5C4191C14D0A700665664 /* BFAppDelegate.m */,
 				5BA5C4411C14D22D00665664 /* Main.storyboard */,
@@ -1926,12 +1950,15 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 72DDF77A16E7485F00887646 /* Build configuration list for PBXNativeTarget "OpenShop" */;
 			buildPhases = (
+				DE5048EC148A5080C472DE48 /* 📦 Check Pods Manifest.lock */,
 				04D200961807E87CE83BCFF2 /* [CP] Check Pods Manifest.lock */,
 				72DDF75016E7485F00887646 /* Sources */,
 				72DDF75116E7485F00887646 /* Frameworks */,
 				72DDF75216E7485F00887646 /* Resources */,
 				28A86DCA4DDBAAB9553611A6 /* [CP] Copy Pods Resources */,
 				C3B6EB6D9168FBE10B51F8D0 /* [CP] Embed Pods Frameworks */,
+				A5A218AB56D05B954D66F942 /* 📦 Embed Pods Frameworks */,
+				187955431569DA00D42AF10D /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1946,11 +1973,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AD2D32B21C870C120091AE0E /* Build configuration list for PBXNativeTarget "OpenShopUITests" */;
 			buildPhases = (
+				636CC31271544F0BDA230C7C /* 📦 Check Pods Manifest.lock */,
 				BBF891C9857A100333D99800 /* [CP] Check Pods Manifest.lock */,
 				AD2D32A71C870C120091AE0E /* Sources */,
 				AD2D32A81C870C120091AE0E /* Frameworks */,
 				AD2D32A91C870C120091AE0E /* Resources */,
 				5C859E7AC925402275BD45E4 /* [CP] Copy Pods Resources */,
+				1387E1A15DCB0775395E4467 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1973,9 +2002,6 @@
 				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Business-Factory";
 				TargetAttributes = {
-					72DDF75316E7485F00887646 = {
-						DevelopmentTeam = GQR3VK8NBG;
-					};
 					AD2D32AA1C870C120091AE0E = {
 						CreatedOnToolsVersion = 7.2.1;
 						LastSwiftMigration = 0800;
@@ -2011,6 +2037,7 @@
 				AD9BA5DE1C887AB100221C82 /* Roboto-Bold.ttf in Resources */,
 				AD9BA5DF1C887AB100221C82 /* Roboto-Light.ttf in Resources */,
 				AD9BA5E01C887AB100221C82 /* Roboto-Medium.ttf in Resources */,
+				08EF98D91E858A0E0039EFDC /* InsertCardManuallyViewController.xib in Resources */,
 				AD9BA5E11C887AB100221C82 /* Roboto-Regular.ttf in Resources */,
 				7253B0D11769C4AC004C6554 /* Localizable.strings in Resources */,
 				BBBDC1B01C4298D500B629A4 /* BFLoadingCollectionReusableView.xib in Resources */,
@@ -2018,6 +2045,7 @@
 				BBBA07031C3AFBC600B97C6D /* BFTableViewLoadingHeaderFooterView.xib in Resources */,
 				BB4306C91C3DAC3700F9EE33 /* BFTableViewButtonHeaderFooterView.xib in Resources */,
 				BBBA07081C3B190C00B97C6D /* BFTableViewCategoryHeaderFooterView.xib in Resources */,
+				08EF98D71E858A0E0039EFDC /* AddNewCardViewController.xib in Resources */,
 				5BA5C4421C14D22D00665664 /* Main.storyboard in Resources */,
 				BBEECB741C3D1ECE00F8E5E4 /* BFTableViewGroupedHeaderFooterView.xib in Resources */,
 			);
@@ -2046,6 +2074,36 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		1387E1A15DCB0775395E4467 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OpenShopUITests/Pods-OpenShopUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		187955431569DA00D42AF10D /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OpenShop/Pods-OpenShop-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		28A86DCA4DDBAAB9553611A6 /* [CP] Copy Pods Resources */ = {
@@ -2078,6 +2136,36 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OpenShopUITests/Pods-OpenShopUITests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		636CC31271544F0BDA230C7C /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A5A218AB56D05B954D66F942 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OpenShop/Pods-OpenShop-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		BBF891C9857A100333D99800 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -2108,6 +2196,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OpenShop/Pods-OpenShop-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		DE5048EC148A5080C472DE48 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -2125,6 +2228,7 @@
 				AD79BEF51C7EEAC800D128AF /* BFBranchOpeningHours+CoreDataProperties.m in Sources */,
 				BBBDC1AE1C42986800B629A4 /* BFCollectionReusableView.m in Sources */,
 				BB6AC11A1C31A07D0016863F /* BFOnboardingRegistrationViewController.m in Sources */,
+				08EF98D81E858A0E0039EFDC /* InsertCardManuallyViewController.m in Sources */,
 				BB1CC0F31C32FBCE00753837 /* UITabBarItem+CustomBadge.m in Sources */,
 				BB9C26591C4D49C600272D13 /* BFProductVariantColor+BFNFiltering.m in Sources */,
 				ADA112841C53D8B70057D14A /* BFPersonalPickupTableViewCellExtension.m in Sources */,
@@ -2263,6 +2367,7 @@
 				BBBF0A431C5A2E340099F71B /* BFSeparatorLine.m in Sources */,
 				AD3938641C5CDF0F00447E8A /* BFCartDiscountsTableViewCellExtension.m in Sources */,
 				ADB676E51C7C51FD007C96DA /* NSNumber+BFNSelection.m in Sources */,
+				08EF98D61E858A0E0039EFDC /* AddNewCardViewController.m in Sources */,
 				5BD993D11BE7D94800AE12C0 /* BFAppSessionInfo.m in Sources */,
 				BBE779521C33273400B03DF1 /* BFTableViewController.m in Sources */,
 				BBFA05FA1C3FA8CF0020CDEE /* BFBranchTransportView.m in Sources */,
@@ -2549,6 +2654,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 25;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_NO_COMMON_BLOCKS = NO;
@@ -2577,6 +2683,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CURRENT_PROJECT_VERSION = 25;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_NO_COMMON_BLOCKS = NO;
@@ -2731,6 +2838,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 25;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_NO_COMMON_BLOCKS = NO;

@@ -11,6 +11,8 @@
 #import "BFTabBarController.h"
 #import "BFAppDelegate.h"
 
+#import "AddNewCardViewController.h"
+
 @interface BFInitViewController ()
 
 @end
@@ -47,7 +49,12 @@ static NSString *const onboardingSegueIdentifier = @"onboardingSegue";
 - (void)viewDidAppear:(BOOL)animated {
     if(![User isLoggedIn]) {
         // login view controller
-        [self performSegueWithIdentifier:onboardingSegueIdentifier sender:self afterDelay:launchScreenDelay];
+//        [self performSegueWithIdentifier:onboardingSegueIdentifier sender:self afterDelay:launchScreenDelay];
+        
+        AddNewCardViewController *n = [[AddNewCardViewController alloc] init];
+        UINavigationController *r = [[UINavigationController alloc] initWithRootViewController:n];
+        
+        [self.navigationController presentViewController:r animated:YES completion:nil];
     }
     else {
         // tab bar controller
