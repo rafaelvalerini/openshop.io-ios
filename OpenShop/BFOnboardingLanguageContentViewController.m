@@ -106,9 +106,11 @@ static CGFloat const contentHeight = 200.0;
         weakSelf.loading = NO;
         if (!error) {
             // set data source
-            weakSelf.languageItems = records;
+            // Marcos Lacerda -> Remove support from Czecho language
+            weakSelf.languageItems = @[records[0]];
             // preselect first shop
             weakSelf.selectedShop = [records firstObject];
+            
             // dismiss overlays
             [weakSelf.view.window dismissAllOverlaysWithCompletion:^{
                 __typeof__(weakSelf) strongSelf = weakSelf;

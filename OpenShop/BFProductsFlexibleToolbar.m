@@ -103,7 +103,10 @@ static CGFloat const toolbarButtonHitTestEdgeInset             = 10.0f;
 
 - (void)initSubviews {
     [self addSubview:self.viewTypeButton];
-    [self addSubview:self.filterView];
+    
+    // Marcos Lacerda -> Removing filter option on products header
+//    [self addSubview:self.filterView];
+    
     [self addSubview:self.sortButton];
 }
 
@@ -111,12 +114,13 @@ static CGFloat const toolbarButtonHitTestEdgeInset             = 10.0f;
 #pragma mark - Products View Type
 
 - (void)updateViewType {
+    // Marcos Lacerda -> Changing this for to show one icon on products header
     switch ([[[BFAppPreferences sharedPreferences]preferredViewType]integerValue]) {
-        case BFViewTypeCollection:
+        case BFViewTypeSingleItem:
             [self.viewTypeButton setImage:[UIImage imageNamed:@"ProductsViewTypeCollection"] forState:UIControlStateNormal];
             break;
             
-        case BFViewTypeSingleItem:
+        case BFViewTypeCollection:
             [self.viewTypeButton setImage:[UIImage imageNamed:@"ProductsViewTypeOneItem"] forState:UIControlStateNormal];
             break;
             
@@ -144,12 +148,19 @@ static CGFloat const toolbarButtonHitTestEdgeInset             = 10.0f;
 - (BFButton *)viewTypeButton {
     if (!_viewTypeButton) {
         _viewTypeButton = [BFButton buttonWithType:UIButtonTypeCustom];
+        
         [_viewTypeButton setFrame:CGRectMake(0, 0, toolbarButtonSize*2, toolbarButtonSize)];
         [_viewTypeButton addTarget:self action:@selector(switchCollectionViewLayout:) forControlEvents:UIControlEventTouchUpInside];
+        
         _viewTypeButton.hitTestEdgeInsets = UIEdgeInsetsMake(-toolbarButtonHitTestEdgeInset, -toolbarButtonHitTestEdgeInset, -toolbarButtonHitTestEdgeInset, -toolbarButtonHitTestEdgeInset);
+        
         // setup layout attributes
         [self setLayoutAttributesForView:_viewTypeButton withCenter:CGPointMake(CGRectGetMinX(self.bounds) + CGRectGetWidth(self.viewTypeButton.bounds)/2, CGRectGetMidY(self.bounds))];
     }
+    
+    // Marcos Lacerda -> Adjustment the icon on button
+    _viewTypeButton.imageEdgeInsets = UIEdgeInsetsMake(0, -40, 0, 0);
+    
     return _viewTypeButton;
 }
 

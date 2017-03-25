@@ -12,20 +12,20 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  * API service host URL.
  */
-static NSString *const BFAPIRootURL                             = @"http://77.93.198.186";
+static NSString *const BFAPIRootURL                             = @"https://api.lojamobile.com.br";
 /**
  * API service default version.
  */
-static NSString *const BFAPIDefaultVersion                      = @"v1.2";
+static NSString *const BFAPIDefaultVersion                      = @"v1";
 
 /**
  * API service user registration request path.
  */
-static NSString *const BFAPIRequestPathUserRegister             = @"users/register";
+static NSString *const BFAPIRequestPathUserRegister             = @"consumers";
 /**
  * API service user login request path.
  */
-static NSString *const BFAPIRequestPathUserLogin                = @"login/email";
+static NSString *const BFAPIRequestPathUserLogin                = @"consumers/auth";
 /**
  * API service user verification request path.
  */
@@ -33,7 +33,7 @@ static NSString *const BFAPIRequestPathUserVerify               = @"users/verify
 /**
  * API service user Facebook credentials verification request path.
  */
-static NSString *const BFAPIRequestPathUserFacebookVerify       = @"login/facebook";
+static NSString *const BFAPIRequestPathUserFacebookVerify       = @"consumers/auth/facebook";
 
 /**
  * API service user password request request path.
@@ -42,7 +42,7 @@ static NSString *const BFAPIRequestPathUserPasswordReset        = @"users/reset-
 /**
  * API service user details request path.
  */
-static NSString *const BFAPIRequestPathUserDetails              = @"users";
+static NSString *const BFAPIRequestPathUserDetails              = @"consumers/%@";
 /**
  * API service user password change request path.
  */

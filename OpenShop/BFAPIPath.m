@@ -11,10 +11,7 @@
 
 
 
-@interface BFAPIPath () {
-
-}
-
+@interface BFAPIPath ()
 @end
 
 
